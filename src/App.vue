@@ -37,9 +37,35 @@
 
 
     <b-container class="bv-example-row seccion2" fluid>
-      <b-row>
+      <b-row class="implementa" aling-v="stretch">
         <b-col>1 of 2</b-col>
-        <b-col>2 of 2</b-col>
+        <b-col>
+          <h2>
+            Implementa el mejor <br>
+            sistema de gestion <br>
+            de transporte que <br>
+            se adapte a tus necesidades <br>
+          </h2>
+          <h4>
+            Cambiar a un ecosistema digital es <br>
+            mas facil que nunca <br>
+          </h4>
+          <h6>
+            Ponle fin a procesos desafiantes para tu empresa, <br>
+            gestiona y preve los riesgos, reduce los costos innecesarios <br>
+            de la logistica y obten una mayor visibilidad convirtiendo los  <br>
+            datos en informacion relevante e impactando positivamente <br>
+            en tu negocio <br>
+          </h6>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col aling-v="center" class="text-center">
+          <h2 style="color:blue">
+            CARDMIND permite a tu empresa <br>
+            tener datos certeros y en un instante sobre:
+          </h2>
+        </b-col>
       </b-row>
     </b-container>  
 
@@ -149,7 +175,7 @@ a {
 }
 
 .seccion2{
-  height: 85vh !important;
+  height: 75vh !important;
 }
 
 .seccion3{
@@ -185,6 +211,13 @@ a {
 .Digitaliza{
   text-align: left;
   color: white;
+  font-weight: 900;   
+  padding: 5vw;
+}
+
+.implementa{
+  text-align: left;
+  color: black;
   font-weight: 900;   
   padding: 5vw;
 }
