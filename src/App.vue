@@ -105,7 +105,7 @@
 
     <b-container class="bv-example-row azul_gradiente seccion_corto" fluid>
       <b-row>
-        <b-col style="padding: 2em; color: white;">
+        <b-col cols="12" style="padding: 2em; color: white;">
           <h3 >
             La visibilidad en tiempo real es necesaria para tomar descisiones rapidas <br>
             e inteligentes que te permitan superar las expectativas de tus clientes
@@ -205,7 +205,7 @@
           <h2>¿Porque deberias <br> elegir CardMind?</h2>
           <h6>---- obtienes estas ventajas competitivas ---</h6>
         </b-col>
-        <b-col cols="4">
+        <b-col cols="12" md="4">
           <b-card
             overlay
             img-src="https://picsum.photos/900/250/?image=3"
@@ -219,7 +219,7 @@
             </b-card-text>
           </b-card>
         </b-col>
-        <b-col cols="4">
+        <b-col cols="12" md="4">
           <b-card
             overlay
             img-src="https://picsum.photos/900/250/?image=3"
@@ -233,7 +233,7 @@
             </b-card-text>
           </b-card>
         </b-col>
-        <b-col cols="4">
+        <b-col cols="12" md="4">
           <b-card
             overlay
             img-src="https://picsum.photos/900/250/?image=3"
@@ -252,8 +252,8 @@
 
     <b-container class="bv-example-row seccion fondo_imagen" fluid>
       <b-row>
-        <b-col style="margin:30px;">
-          <div>
+        <b-col  style="margin:30px;">
+          <div cols="12">
             <b-carousel
               id="carousel-1"
               v-model="slide"
