@@ -6,7 +6,7 @@
     sticky 
     class="barraNav blanco_fondo">
     <!-- type="light"  -->
-        <b-navbar-brand href="#">
+        <b-navbar-brand to="/">
         <img 
           src="@/assets/logoCard.png" 
           alt="Logo">
@@ -17,14 +17,14 @@
         
         <b-navbar-nav class="ml-auto blanco_fondo derechaNav" right>
             <b-navbar-nav  right>
-            <b-nav-item style="margin-top: 10px;" href="#">CLIENTES</b-nav-item>
-            <b-nav-item style="margin-top: 10px;" href="#">PRECIOS</b-nav-item>
-            <b-nav-item style="margin-top: 10px;" href="#">NOSOTROS</b-nav-item>
-            <b-nav-item style="margin-top: 10px;" href="#">CONTACTOS</b-nav-item>
-            <b-nav-item>
-                <b-button variant="success">INGRESO</b-button>
+            <b-nav-item style="margin-top: 10px;" to="/clientes">CLIENTES</b-nav-item>
+            <b-nav-item style="margin-top: 10px;" to="/precios">PRECIOS</b-nav-item>
+            <b-nav-item style="margin-top: 10px;" to="/nosotros">NOSOTROS</b-nav-item>
+            <b-nav-item style="margin-top: 10px;" to="/contactos">CONTACTOS</b-nav-item>
+            <b-nav-item href="https://carmind-app.com">
+                <b-button variant="success" >INGRESO</b-button>
             </b-nav-item>
-            <b-nav-item>
+            <b-nav-item href="/demo">
                 <b-button variant="primary" class="azul_gradiente">DEMO GRATUITA</b-button>
             </b-nav-item>
             </b-navbar-nav>
@@ -130,7 +130,7 @@ a {
 .derechaNav{
   margin-right: 0px;
   text-align: right;
-  margin-left: 10rem;
+  margin-left: 10vw;
 }
 /* 
 derechaNav en celular
