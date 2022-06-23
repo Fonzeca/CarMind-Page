@@ -6,8 +6,8 @@
                 Digitaliza tus procesos <br>
                 logisticos para lograr <br>          
                 <span style="color: #B6E802;">
-                    <img class="img-responsive" src="@/assets/A/3_S.png" alt="">
-                    Eficiencia 
+                    <img class="img-responsive ok_img" src="@/assets/A/3_S.png" alt="">
+                    EFICIENCIA 
                 </span> 
                 <br>          
                 En tus servicios <br>          
@@ -34,7 +34,12 @@
         line-height: 1.4em;
     }
     .A2{
-        height: 20rem;
+        height: 22vw;
+    }
+    .ok_img{
+        top: -0.1em;
+        position: relative;
+        right: 0.2em;
     }
 
 </style>

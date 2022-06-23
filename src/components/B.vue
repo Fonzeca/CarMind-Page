@@ -66,7 +66,7 @@
     }
 
     .imagenes_B{
-        margin-top: 7vw;
+        margin-top: 8vw !important;
     }
 
     .B4, .B5{
@@ -76,8 +76,8 @@
     .B4{
         width: 18vw;
         position: relative;
-        left: 74px;
-        bottom: 109px;
+        left: 5vw;
+        bottom: 10vw;
     }
     
     .B5{

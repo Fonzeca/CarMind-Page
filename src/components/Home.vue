@@ -42,34 +42,7 @@
     
     <B></B>
 
-    <b-container class="bv-example-row seccion3 dark" fluid>
-      <b-row style="padding: 5em;">
-        <b-col cols="12" md="4" aling-v="center" >
-          <b-list-group style="margin: 10px;">
-            <b-list-group-item href="#some-link">Awesome link</b-list-group-item>
-            <b-list-group-item href="#" active>Link with active state</b-list-group-item>
-            <b-list-group-item href="#">Action links are easy</b-list-group-item>
-            <b-list-group-item href="#foobar" disabled>Disabled link</b-list-group-item>
-          </b-list-group>
-        </b-col>
-        <b-col cols="12" md="4" aling-v="center" >
-          <b-list-group style="margin: 10px;">
-            <b-list-group-item href="#some-link">Awesome link</b-list-group-item>
-            <b-list-group-item href="#" active>Link with active state</b-list-group-item>
-            <b-list-group-item href="#">Action links are easy</b-list-group-item>
-            <b-list-group-item href="#foobar" disabled>Disabled link</b-list-group-item>
-          </b-list-group>
-        </b-col>
-        <b-col cols="12" md="4" aling-v="center" >
-          <b-list-group style="margin: 10px;">
-            <b-list-group-item href="#some-link">Awesome link</b-list-group-item>
-            <b-list-group-item href="#" active>Link with active state</b-list-group-item>
-            <b-list-group-item href="#">Action links are easy</b-list-group-item>
-            <b-list-group-item href="#foobar" disabled>Disabled link</b-list-group-item>
-          </b-list-group>
-        </b-col>
-      </b-row>
-    </b-container>  
+    <c></c>
 
     <b-container class="bv-example-row azul_gradiente seccion_corto" fluid>
       <b-row>
@@ -331,7 +304,7 @@ import H from '@/components/H.vue'
 export default {
   name: 'app',
   components: {
-      A, B
+      A, B, C
     },
   data () {
     return {
