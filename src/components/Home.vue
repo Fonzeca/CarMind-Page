@@ -44,51 +44,9 @@
 
     <c></c>
 
-    <b-container class="bv-example-row azul_gradiente seccion_corto" fluid>
-      <b-row>
-        <b-col cols="12" style="padding: 2em; color: white;">
-          <h3 >
-            La visibilidad en tiempo real es necesaria para tomar descisiones rapidas <br>
-            e inteligentes que te permitan superar las expectativas de tus clientes
-          </h3>
-          <br>
-          <div>
-            <b-button  variant="success">
-              Haciendo click aqui obtienes una demo gratuita
-            </b-button>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>  
+    <D></D>
 
-    <b-container class="bv-example-row seccion2" fluid>
-      <b-row>
-        <b-col cols="12" md="6">
-          <h3 style="padding-top: 2em;" class="text-center">
-            Obten el total control de tu flota con CarMind: <br>
-            El sistema intuitivo y facil de usar.
-          </h3>
-          <b-button variant="success">
-            Solicita tu demo gratuita aqui
-          </b-button>
-        </b-col>
-        <b-col cols="12" md="6">
-          <h2 style="padding-top: 2em;">
-            <span>Control total </span>en <br>
-            una sola herramienta <br>
-            completamente <br>
-            unificada 
-          </h2>
-          <b-list-group>
-            <b-list-group-item>Cras justo odio</b-list-group-item>
-            <b-list-group-item active>Dapibus ac facilisis in</b-list-group-item>
-            <b-list-group-item>Morbi leo risus</b-list-group-item>
-            <b-list-group-item>Porta ac consectetur ac</b-list-group-item>
-            <b-list-group-item>Vestibulum at eros</b-list-group-item>
-          </b-list-group>
-        </b-col>
-      </b-row>
-    </b-container>  
+    <E></E>
 
     <b-container class="bv-example-row seccion seccion_corto" fluid>
       <b-row style="padding-top: 3em;">
@@ -304,7 +262,7 @@ import H from '@/components/H.vue'
 export default {
   name: 'app',
   components: {
-      A, B, C
+      A, B, C, D, E
     },
   data () {
     return {

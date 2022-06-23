@@ -44,7 +44,8 @@
 
     .implementa_row{
         text-align: left;
-        padding: 6vw;
+        padding: 5vw;
+        padding-bottom: 0px;
     }
     .implementa{
         font-family: "Archivo";

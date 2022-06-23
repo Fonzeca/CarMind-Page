@@ -101,13 +101,13 @@
         top:3vw;
     }
     .I6L{
-        height: 35vh;
+        height: 30vh;
     }
     .I7L{
-        height: 55vh;
+        height: 40vh;
     }
     .I8L{
-        height: 50vh;
+        height: 32vh;
     }
 </style>
 <script>
