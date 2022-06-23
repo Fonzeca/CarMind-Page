@@ -48,204 +48,14 @@
 
     <E></E>
 
-    <b-container class="bv-example-row seccion seccion_corto" fluid>
-      <b-row style="padding-top: 3em;">
-        <b-col cols="12">
-          <h4>EMPRESAS QUE YA ELIGIERON CARDMIND </h4>
-        </b-col>
-        <b-col cols="4">
-           <b-card
-            overlay
-            img-src="https://picsum.photos/900/250/?image=3"
-            img-alt="Card Image"
-            text-variant="white"
-            title="Image Overlay"
-            sub-title="Subtitle"
-          >
-            <b-card-text>
-              Some quick example text to build on the card and make up the bulk of the card's content.
-            </b-card-text>
-          </b-card>
-        </b-col>
-        <b-col cols="4">
-           <b-card
-            overlay
-            img-src="https://picsum.photos/900/250/?image=3"
-            img-alt="Card Image"
-            text-variant="white"
-            title="Image Overlay"
-            sub-title="Subtitle"
-          >
-            <b-card-text>
-              Some quick example text to build on the card and make up the bulk of the card's content.
-            </b-card-text>
-          </b-card>
-        </b-col>
-        <b-col cols="4">
-           <b-card
-            overlay
-            img-src="https://picsum.photos/900/250/?image=3"
-            img-alt="Card Image"
-            text-variant="white"
-            title="Image Overlay"
-            sub-title="Subtitle"
-          >
-            <b-card-text>
-              Some quick example text to build on the card and make up the bulk of the card's content.
-            </b-card-text>
-          </b-card>
-        </b-col>
-      </b-row>
-    </b-container>  
+    <F></F>
 
-    <b-container class="bv-example-row seccion" fluid>
-      <b-row>
-        <b-col cols="12" class="text-center" style="padding-top: 3em;">
-          <h2>¿Porque deberias <br> elegir CardMind?</h2>
-          <h6>---- obtienes estas ventajas competitivas ---</h6>
-        </b-col>
-        <b-col cols="12" md="4">
-          <b-card
-            overlay
-            img-src="https://picsum.photos/900/250/?image=3"
-            img-alt="Card Image"
-            text-variant="white"
-            title="Image Overlay"
-            sub-title="Subtitle"
-          >
-            <b-card-text>
-              Some quick example text to build on the card and make up the bulk of the card's content.
-            </b-card-text>
-          </b-card>
-        </b-col>
-        <b-col cols="12" md="4">
-          <b-card
-            overlay
-            img-src="https://picsum.photos/900/250/?image=3"
-            img-alt="Card Image"
-            text-variant="white"
-            title="Image Overlay"
-            sub-title="Subtitle"
-          >
-            <b-card-text>
-              Some quick example text to build on the card and make up the bulk of the card's content.
-            </b-card-text>
-          </b-card>
-        </b-col>
-        <b-col cols="12" md="4">
-          <b-card
-            overlay
-            img-src="https://picsum.photos/900/250/?image=3"
-            img-alt="Card Image"
-            text-variant="white"
-            title="Image Overlay"
-            sub-title="Subtitle"
-          >
-            <b-card-text>
-              Some quick example text to build on the card and make up the bulk of the card's content.
-            </b-card-text>
-          </b-card>
-        </b-col>
-      </b-row>
-    </b-container>  
+    <!-- <Gig></Gig> -->
 
-    <b-container class="bv-example-row seccion fondo_imagen" fluid>
-      <b-row>
-        <b-col  style="margin:30px;">
-          <div cols="12">
-            <b-carousel
-              id="carousel-1"
-              v-model="slide"
-              :interval="4000"
-              controls
-              indicators
-              background="#ababab"
-              img-width="1024"
-              img-height="250"
-              style="text-shadow: 1px 1px 2px #333;"
-              @sliding-start="onSlideStart"
-              @sliding-end="onSlideEnd"
-            >
-              <!-- Text slides with image -->
-              <b-carousel-slide
-                caption="First slide"
-                text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-                img-src="https://picsum.photos/1024/480/?image=52"
-              ></b-carousel-slide>
+    <H></H>
 
-              <!-- Slides with custom text -->
-              <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-                <h1>Hello world!</h1>
-              </b-carousel-slide>
-
-              <!-- Slides with image only -->
-              <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-
-              <!-- Slides with img slot -->
-              <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-              <b-carousel-slide>
-                <template #img>
-                  <img
-                    class="d-block img-fluid w-100"
-                    width="1024"
-                    height="250"
-                    src="https://picsum.photos/1024/480/?image=55"
-                    alt="image slot"
-                  >
-                </template>
-              </b-carousel-slide>
-
-              <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-              <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-                  a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-                </p>
-              </b-carousel-slide>
-            </b-carousel>
-          </div>
-        </b-col>
-        
-      </b-row>
-    </b-container>  
-
-    <b-container class="bv-example-row azul_gradiente seccion_corto" fluid>
-      <b-row  style="padding:10vh  ;">
-        <b-col cols="12" >
-          <h2 class="text-center" style="color:whitesmoke">
-            Quiero gestionar mi flota de vehiculos.
-          </h2>
-        </b-col>
-        <b-col cols="12" >
-          <b-button variant="success">
-            SOLICITA TU DEMO GRATUITA AQUI
-          </b-button>
-        </b-col>
-      </b-row>
-    </b-container>  
-
-    <b-container class="bv-example-row seccion dark" fluid>
-      <b-row style="padding:5em;">
-        <b-col>
-          <b-list-group class="dark">
-            <b-list-group-item class="dark">Cras justo odio</b-list-group-item>
-            <b-list-group-item class="dark">Dapibus ac facilisis in</b-list-group-item>
-            <b-list-group-item class="dark">Morbi leo risus</b-list-group-item>
-            <b-list-group-item class="dark">Porta ac consectetur ac</b-list-group-item>
-            <b-list-group-item class="dark">Vestibulum at eros</b-list-group-item>
-          </b-list-group>
-        </b-col>
-        <b-col>
-          <b-list-group class="dark">
-            <b-list-group-item class="dark">Cras justo odio</b-list-group-item>
-            <b-list-group-item class="dark">Dapibus ac facilisis in</b-list-group-item>
-            <b-list-group-item class="dark">Morbi leo risus</b-list-group-item>
-            <b-list-group-item class="dark">Porta ac consectetur ac</b-list-group-item>
-            <b-list-group-item class="dark">Vestibulum at eros</b-list-group-item>
-          </b-list-group>
-        </b-col>
-      </b-row>
-    </b-container>  
+    <I></I>
+    
   </div>
 </template>
 
@@ -256,29 +66,15 @@ import C from '@/components/C.vue'
 import D from '@/components/D.vue'
 import E from '@/components/E.vue'
 import F from '@/components/F.vue'
-import G from '@/components/G.vue'
+import Gig from '@/components/Gig.vue'
 import H from '@/components/H.vue'
+import I from '@/components/I.vue'
 
 export default {
   name: 'app',
   components: {
-      A, B, C, D, E
-    },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-      slide: 0,
-      sliding: null
+      A, B, C, D, E, F, Gig, H, I
     }
-  },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true
-    },
-    onSlideEnd(slide) {
-      this.sliding = false
-    }
-  }
 }
 
 </script>
