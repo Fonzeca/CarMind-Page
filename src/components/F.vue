@@ -46,7 +46,7 @@
                         en el trabajo que si importa en
                         lugar de tener que gestionar
                         manualmente los procesos.
-                        <br></br>
+                        <br>
                         Obtienes mayores ganancias 
                         reduciendo al minimo los costos
                         por los 'dias perdidos 
@@ -65,7 +65,7 @@
                         a problemas de papeleo o
                         mecanicos de alguno de tus 
                         vehiculos.
-                        <br></br>
+                        <br>
                         En un click accedes a informacion
                         de toda tu flota, y tomaras decisiones 
                         rapidas e inteligentes.
