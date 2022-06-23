@@ -8,7 +8,7 @@
 export default {
   name: 'App',
   metaInfo: {
-    title: 'CardMind',
+    title: 'CarMind',
     htmlAttrs: {
       lang: 'es',
       amp: true
