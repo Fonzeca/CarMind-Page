@@ -3,7 +3,7 @@
       <b-row>
         <b-col cols="12" md="6">
           <b-row>
-            <b-col cols="12" style="margin-top: 8.5vw;">
+            <b-col cols="12 mg">
                 <img class="img-responsive img_cc c99_L" src="@/assets/D/99.png">
                 <!-- <img class="img-responsive img_cc c9_L" src="@/assets/D/9_L.png">
                 <img class="img-responsive img_cc c10_L" src="@/assets/D/10_L.png">
@@ -17,7 +17,7 @@
                     El sistema intuitivo y facil de usar.
                 </h3>
                 <b-button variant="success btn-h">
-                    Solicita tu demo gratuita aqui
+                    <span> Solicita tu demo gratuita aqui</span>
                 </b-button>
             </b-col>
           </b-row>
@@ -60,6 +60,9 @@
     </b-container>  
 </template>
 <style>
+    .mg{
+        margin-top: 8.5vh !important;
+    }
     .linksGrupo{
         text-align: left;
         font-family: 'Nunito';
@@ -68,11 +71,12 @@
         border-color:transparent;
     }
     .control_a{
-        padding-top: 2em;
+        padding-top: 15vh;
         text-align: left;
         font-family: "Archivo";
         font-weight: 900;
         text-transform: uppercase;
+        margin-left: 20px;
     }
     .azul_control{
         color:blue;
@@ -119,7 +123,7 @@
         font-family: "Archivo";
         font-weight: 900;
         font-size: 1.3rem;
-        margin-top:-40px;
+        margin-top:-35px;
         color: blue;
     }
     .btn-h{
@@ -128,6 +132,26 @@
     }
     .img_ok{
         width: 25px;
+    }
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 992px) {
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+        .control_a{
+            text-align: left;
+            font-family: "Archivo";
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-left: 5px;
+        }
+        .btn-h{
+            width: 75vw;
+        }
+        .c99_L {
+            width: 90vw;
+        }
     }
 </style>
 <script>

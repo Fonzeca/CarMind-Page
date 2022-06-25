@@ -38,19 +38,27 @@
 
 <style>
     .someLink2 .list-group-item{
-        font-family: "Nunito";
-        margin: 10px;
-        background-color: transparent;
-        color: white !important;
-        text-align: left; 
-        font-weight: 400;
-        line-height:0px;
+      font-family: "Nunito";
+      margin: 10px;
+      background-color: transparent;
+      color: white !important;
+      text-align: left;
+      font-weight: 400;
+      line-height: 20px;
     }
     
     .someLink2 .list-group-item:hover{
         background-color: transparent !important;
     }
- 
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 992px) {
+      
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+      
+    }
 </style>
 
 <script>

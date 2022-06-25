@@ -9,7 +9,7 @@
           <br>
           <div>
             <b-button  variant="success" class="btn_haciendo">
-              Haciendo click aqui obtienes una demo gratuita
+              <span> Haciendo click aqui obtienes una </span> demo gratuita
             </b-button>
           </div>
         </b-col>
@@ -27,10 +27,23 @@
   .btn_haciendo{
     font-family: "Archivo";
     text-transform: uppercase;
-    font-size: 16px !important;
+    font-size: 1vw !important;
     font-weight: 620 !important;
     height: 40px;
     line-height: 1.2px !important;
+  }
+  /* On screens that are 992px or less, set the background color to blue */
+  @media screen and (max-width: 992px) {
+  }
+
+  /* On screens that are 600px or less, set the background color to olive */
+  @media screen and (max-width: 600px) {
+    .btn_haciendo{
+      font-size: 4vw !important;
+    }
+    .btn_haciendo span{
+      display: none;
+    }
   }
 </style>
 <script>

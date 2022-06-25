@@ -84,7 +84,8 @@ a {
 }
 
 .btn-success, .btn-primary{
-  padding: 10px !important;
+  font-family: 'Nunito', sans-serif;
+  /* padding: 10px !important; */
   height: 2.5rem;
   margin-top: 1px !important;
   font-size: 1em !important;
@@ -93,15 +94,15 @@ a {
 }
 
 .navbar-light .navbar-nav .nav-link{
-  color: black !important;
-  font-size: 1em !important;
-  font-weight: 900 !important;
+  color: #1A1A1A !important;
+  font-size: 1vw !important;
+  font-weight: 400 !important;
 }
 
 
 
 .dark{
-  background-color: black;
+  background-color: #1A1A1A;
   color: white;
   /*padding: 5em;
   vertical-align:center;*/
@@ -121,6 +122,12 @@ a {
   font-size: 2.25rem !important;
   font-family: 'archivo', sans-serif;
   font-weight: 600;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-left: 3rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .navbar-brand img{
@@ -128,10 +135,11 @@ a {
 }
 
 .derechaNav{
-  margin-right: 0px;
+  right: 4vw;
   text-align: right;
-  margin-left: 10vw;
+  position: absolute;
 }
+
 /* 
 derechaNav en celular
 .derechaNav{
@@ -144,8 +152,58 @@ derechaNav en celular
 
 .derechaNav li{
   padding: 8px;
-  font-size: 12px;
-  color: black;
+  color: #1A1A1A;
+  font-family: "Nunito";
+  font-weight: 300;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .navbar-brand{
+    margin-left: 0rem;
+   }
+  .derechaNav{
+    right: 0vw;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .derechaNav li{
+    padding: 8px;
+    color: #1A1A1A;
+    font-family: "Nunito";
+    font-weight: 300;
+  }
+
+  .btn-success, .btn-primary{
+    font-family: 'Nunito', sans-serif;
+    /* padding: 10px !important; */
+    height: 2.5rem;
+    margin-top: 1px !important;
+    font-size: 2vh !important;
+    font-weight: 900 !important;
+    border-radius: 0.70rem !important;
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+    color: #1A1A1A !important;
+    font-size: 5vw !important;
+    font-weight: 389 !important;
+  }
+  .navbar-collapse{
+    position: fixed;
+    top: 14vh;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 </style>

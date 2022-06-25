@@ -18,7 +18,7 @@
                 Cambiar a un ecosistema digital es <br>
                 mas facil que nunca <br>
                 </h4>
-                <h6>
+                <h6 class="pnl">
                 Ponle fin a procesos desafiantes para tu empresa, <br>
                 gestiona y preve los riesgos, reduce los costos innecesarios <br>
                 de la logistica y obten una mayor visibilidad convirtiendo los  <br>
@@ -30,8 +30,8 @@
         
         <b-row>
             <b-col aling-v="center" class="text-center" cols="12">
-                <h2 class="implementa" style="color:blue; margin-bottom: 30px;">
-                CARDMIND permite a tu empresa <br>
+                <h2 class="implementa carmind_azul" >
+                CARMIND permite a tu empresa <br>
                 tener datos certeros y en un instante sobre:
                 </h2>
             </b-col>
@@ -51,15 +51,16 @@
         font-family: "Archivo";
         font-weight: 900;
         margin-bottom: 1.5vw;
-        color: black;
+        color: #1A1A1A;
         letter-spacing: -1px;
+        font-size: 2vw;
     }
 
     .ecosistema{
         font-family: "Archivo";
         font-weight: 900;
         margin-bottom: 2vw;
-        font-size: 1.2rem;
+        font-size: 1.7vw;
         text-transform: uppercase;
         color: #4218D9;
         word-spacing: 5px;
@@ -83,6 +84,66 @@
     
     .B5{
         width: 40vw;
+    }
+
+    .pnl{
+        font-size: 1.5vw;
+    }
+    .carmind_azul{
+        color:blue; margin-bottom: 2em;
+    }
+
+    /* On screens that are 992px or less, set the background color to blue */
+    @media screen and (max-width: 992px) {
+        .B4{
+            width: 25vw;
+        }
+        .B5{
+            width: 50vw;
+        }
+        .implementa{
+            font-size: 2.3vh;
+        }
+        .carmind_azul{
+            font-size: 1em;
+            text-align: left;
+            padding: 4vw;
+        }
+        .ecosistema{
+            font-size: 2.5vw;
+        }
+        .pnl{
+            font-size: 4.5vw;
+        }
+    }
+
+    /* On screens that are 600px or less, set the background color to olive */
+    @media screen and (max-width: 600px) {
+        .B4{
+            width: 40vw;
+            
+        }
+        .B5{
+            width: 90vw;
+            
+        }
+        .implementa{
+            font-size: 4vh;
+            line-height: 4vh;
+        }
+        .carmind_azul{
+            font-size: 1em;
+            text-align: left;
+            padding: 4vw;
+            line-height: 2vh;
+        }
+        .ecosistema{
+            font-size: 3.5vw;
+            margin-right: 30%;
+        }
+        .pnl{
+            margin-right: 10vh;
+        }
     }
 
 </style>
