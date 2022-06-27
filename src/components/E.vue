@@ -16,7 +16,7 @@
                     Obten el total control de tu flota con CarMind: <br>
                     El sistema intuitivo y facil de usar.
                 </h3>
-                <b-button variant="success btn-h">
+                <b-button variant="success btn-h" to="/demo">
                     <span> Solicita tu demo gratuita aqui</span>
                 </b-button>
             </b-col>
@@ -76,7 +76,7 @@
         font-family: "Archivo";
         font-weight: 900;
         text-transform: uppercase;
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
     .azul_control{
         color:blue;

@@ -8,7 +8,7 @@
           </h4>
           <br>
           <div>
-            <b-button  variant="success" class="btn_haciendo">
+            <b-button  variant="success" to="/demo" class="btn_haciendo">
               <span> Haciendo click aqui obtienes una </span> demo gratuita
             </b-button>
           </div>
@@ -40,6 +40,7 @@
   @media screen and (max-width: 600px) {
     .btn_haciendo{
       font-size: 4vw !important;
+      padding-top: 16px !important;
     }
     .btn_haciendo span{
       display: none;

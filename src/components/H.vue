@@ -11,7 +11,7 @@
         </b-col>
         
         <b-col cols="12" >
-          <b-button variant="success" class="f_btn">
+          <b-button variant="success" to="/demo" class="f_btn">
             SOLICITA TU DEMO GRATUITA AQUI
           </b-button>
         </b-col>
