@@ -76,7 +76,7 @@
         font-family: "Archivo";
         font-weight: 900;
         text-transform: uppercase;
-        /* margin-left: 20px; */
+        margin-left: 20px;
     }
     .azul_control{
         color:blue;
@@ -135,6 +135,9 @@
     }
     /* On screens that are 992px or less, set the background color to blue */
     @media screen and (max-width: 992px) {
+        .control_a{
+            margin-left: 3vw;;
+        }
     }
 
     /* On screens that are 600px or less, set the background color to olive */

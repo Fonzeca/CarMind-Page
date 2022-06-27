@@ -33,6 +33,8 @@
         font-weight: 900 !important;
         line-height: 1.2em;
         font-size: 3em;
+        position: relative;
+        left: 5vw;
     }
     .A2{
         height: 22vw;
@@ -49,6 +51,8 @@
             color: white;
             font-weight: 900;   
             padding: 5vw;
+            
+            
         }
 
         .Digitaliza h2{

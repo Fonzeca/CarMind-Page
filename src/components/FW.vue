@@ -441,7 +441,7 @@
       width: 20px;
       position: relative;
       top: -125px;
-      left: 11vw;
+      left: 8vw;
     }
     .text_label{
       font-size: 1rem;

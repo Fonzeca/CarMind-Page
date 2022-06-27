@@ -31,6 +31,7 @@
     font-weight: 620 !important;
     height: 40px;
     line-height: 1.2px !important;
+    padding-top: 20px !important;
   }
   /* On screens that are 992px or less, set the background color to blue */
   @media screen and (max-width: 992px) {
