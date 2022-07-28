@@ -3,11 +3,13 @@
       <b-row>
         <b-col cols="12" md="6">
           <b-row>
-            <b-col cols="12 mg">
-                <img class="img-responsive img_cc c99_L" src="@/assets/D/99.png">
-                <!-- <img class="img-responsive img_cc c9_L" src="@/assets/D/9_L.png">
-                <img class="img-responsive img_cc c10_L" src="@/assets/D/10_L.png">
-                <img class="img-responsive img_cc c11_L" src="@/assets/D/11_L.png">
+            <b-col cols="12 mg auto_alto">
+                <img class="d-block d-sm-block d-md-none img-responsive img_cc c99_L" src="@/assets/D/99.png">
+            </b-col>
+            <b-col cols="12 mg d-none d-sm-none d-md-block auto_alto"  >
+                <img class="img-responsive c9_L animate__animated" src="@/assets/D/9_L.png">
+                <img class="img-responsive c9_R animate__animated animate__fadeInLeft animate__slow" src="@/assets/D/9_R.png">
+                <!-- <img class="img-responsive img_cc c11_L" src="@/assets/D/11_L.png">
                 <img class="img-responsive img_cc c12_L" src="@/assets/D/12_L.png">
                 <img class="img-responsive img_cc c13_L" src="@/assets/D/13_L.png"> -->
             </b-col>
@@ -34,22 +36,27 @@
                 <img src="@/assets/A/3_S.png" class="img-responsive img_ok">
                 Controlar los costos del Transporte.
             </b-list-group-item>
+            <br>
             <b-list-group-item>
                 <img src="@/assets/A/3_S.png" class="img-responsive img_ok">
                 Rastrear el desempeño del conductor con visibilidad en tiempo real.
             </b-list-group-item>
+            <br>
             <b-list-group-item>
                <img src="@/assets/A/3_S.png" class="img-responsive img_ok"> 
                Obtener la informacion necesaria sobre el estado de cada vehiculo.
             </b-list-group-item>
+            <br>
             <b-list-group-item>
                 <img src="@/assets/A/3_S.png" class="img-responsive img_ok">
                 Digitalizar tus procesos para agilizar los mismos.
             </b-list-group-item>
+            <br>
             <b-list-group-item>
                 <img src="@/assets/A/3_S.png" class="img-responsive img_ok">
                 Optimizar los flujos de trabajo y la comunicacion entre las partes involucradas.
             </b-list-group-item>
+            <br>
             <b-list-group-item>
                 <img src="@/assets/A/3_S.png" class="img-responsive img_ok">
                 Recopilar datos para mejorar la toma de decisiones.
@@ -60,6 +67,9 @@
     </b-container>  
 </template>
 <style>
+    .auto_alto{
+        height: auto !important;
+    }
     .mg{
         margin-top: 8.5vh !important;
     }
@@ -85,10 +95,21 @@
         position:absolute;
     }
     .c9_L{
-        width: 39vw;
-        left: 6vw;
-        top: 2vh;
+        margin-bottom: 10em;
         position: relative;
+        left: 5em;
+        width: 25em;
+        top: 2em;
+    }
+    .c9_L:hover{
+    }
+    .c9_R{
+        position: absolute;
+        left: -3em;
+        width: 45em;
+        margin-top: -75px;
+    }
+    .c9_R:hover{
     }
     .c99_L{
         width: 40vw;

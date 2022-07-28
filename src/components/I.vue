@@ -3,11 +3,11 @@
       <b-row style="padding:5em;">
         
 
-        <b-col cols="12" md="1"></b-col>
+        <b-col cols="12" md="2"></b-col>
 
         <b-col cols="12" md="5">
           <b-list-group class="dark someLink2">
-            <b-list-group-item class="dark">afonso@mindia.com.ar</b-list-group-item>
+            <b-list-group-item class="dark">afonzo@mindia.com.ar</b-list-group-item>
             <b-list-group-item class="dark">+54 2966 676495</b-list-group-item>
             <b-list-group-item class="dark">Puerto San Julian, Santa Cruz, Argentina.</b-list-group-item>
           </b-list-group>

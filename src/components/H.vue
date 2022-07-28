@@ -7,7 +7,7 @@
           <h4 class="text-center text_celu">
             Quiero gestionar mi flota de vehiculos.
           </h4>
-          <img class="img-responsive img_celu" src="@/assets/G/20_l.png">
+          <img class="img-responsive img_celu animate__animated animate__tada animate__infinite" src="@/assets/G/20_l.png">
         </b-col>
         
         <b-col cols="12" >
@@ -22,12 +22,17 @@
 </template>
 
 <style>
+    .img_celu:hover{
+        animation-play-state: running;
+    }
     .img_celu{
+        animation-play-state: paused;
         position: relative;
         height: 35vh;
         top: -25vh;
         right: -50vh;
         margin-bottom: -35vh;
+
     }
     .text_celu{
         color:whitesmoke;

@@ -4,7 +4,7 @@
         <b-row class="implementa_row" aling-v="center">
             <b-col class="imagenes_B">
                 <img class="img-responsive B5" src="@/assets/B/5_L.png" alt="">
-                <img class="img-responsive B4" src="@/assets/B/4_L.png" alt="">
+                <img class="img-responsive B4 animate__animated animate__fadeInDown" src="@/assets/B/4_L.png" alt="">
             </b-col>
             
             <b-col cols="12" md="6">
@@ -74,7 +74,10 @@
     .B4, .B5{
         position: absolute;
     }
-
+    .B4:hover{
+        /* animation-play-state: running; */
+    }
+    
     .B4{
         width: 18vw;
         position: relative;

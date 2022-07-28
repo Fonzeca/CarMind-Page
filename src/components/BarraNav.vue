@@ -18,9 +18,9 @@
         <b-navbar-nav class="ml-auto blanco_fondo derechaNav" right>
             <b-navbar-nav  right>
             <b-nav-item style="margin-top: 10px;" to="/clientes">CLIENTES</b-nav-item>
-            <b-nav-item style="margin-top: 10px;" to="/precios">PRECIOS</b-nav-item>
+            <!-- <b-nav-item style="margin-top: 10px;" to="/precios">PRECIOS</b-nav-item> -->
             <b-nav-item style="margin-top: 10px;" to="/nosotros">NOSOTROS</b-nav-item>
-            <b-nav-item style="margin-top: 10px;" to="/contactos">CONTACTOS</b-nav-item>
+            <b-nav-item style="margin-top: 10px;" to="/demo">CONTACTO</b-nav-item>
             <b-nav-item href="https://carmind-app.com">
                 <b-button variant="success" >INGRESO</b-button>
             </b-nav-item>

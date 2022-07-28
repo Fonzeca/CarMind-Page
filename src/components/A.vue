@@ -5,7 +5,7 @@
             <h2>
                 Digitaliza tus procesos <br>
                 logisticos para lograr <br>          
-                <span style="color: #B6E802;">
+                <span style="color: #B6E802;" >
                     <img class="img-responsive ok_img" src="@/assets/A/3_S.png" alt="">
                     EFICIENCIA 
                 </span> 
@@ -14,7 +14,7 @@
             </h2>
         </b-col>
         <b-col cols="12" md="6" class="text-center A2">
-            <img class="img-responsive A2" src="@/assets/A/2_L.png" alt="">
+            <img class="img-responsive A2"  src="@/assets/A/2_L.png" alt="">
         </b-col>
         </b-row>
     </b-container> 

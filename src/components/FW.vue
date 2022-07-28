@@ -3,8 +3,8 @@
       <!-- Paso 1 Formulario Tipo-->
       <b-row v-if="historial == 'Tipo'" class="formaBase">
         <b-col cols="12">
-          <h2 class="text-center title pregunta">
-            Para entender mejor las necesidades de su negocio, ¿con qué tipo de vehículos cuentas?
+          <h2 class="text-center title pregunta" @click="enviarForm()">
+            Para entender mejor las necesidades de su negocio <br>¿con qué tipo de vehículos cuentas?
           </h2>
         </b-col>
         <b-col cols="12" md="1">
@@ -86,7 +86,7 @@
         <b-col class="room" cols="12">
           <h2 class="text-center title pregunta">
               ¡Definitivamente podemos ayudar con eso! <br>
-              ¿Cuál es el tamaño de su empresa?
+              ¿Con cuantos vehiculos contas?
           </h2>
         </b-col>
         <b-col cols="12" md="1">
@@ -97,13 +97,13 @@
               <input 
               v-model="flota"
               @change="pasarFlota()"  
-              value="1-2" 
+              value="1-5" 
               id="unodos" 
               type="checkbox" 
               name="unodos"/>
               <label for="unodos">
                 <span class="text_label">
-                  1 - 2
+                  1 - 5
                 </span>
                 </label>
               <div class="vv_g"></div>
@@ -112,13 +112,13 @@
               <input 
               v-model="flota"
               @change="pasarFlota()"  
-              value="3-19"  
+              value="6-20"  
               id="3-19" 
               type="checkbox" 
               name="3-19"/>
               <label for="3-19">
                 <span class="text_label">
-                  3 - 19
+                  6 - 20
                 </span>
                 </label>
               <div class="vv_g"></div>
@@ -127,13 +127,13 @@
               <input 
                v-model="flota"
               @change="pasarFlota()"  
-              value="20-50" 
+              value="21-50" 
               id="20-50" 
               type="checkbox" 
               name="20-50"/>
               <label for="20-50">
                 <span class="text_label">
-                  20 - 50
+                  21 - 50
                 </span>
                 </label>
               <div class="vv_g"></div>
@@ -148,7 +148,7 @@
               name="50"/>
               <label for="50">
                 <span class="text_label">
-                  mas de 50
+                  50+
                 </span>
                 </label>
               <div class="vv_g"></div>
@@ -176,7 +176,7 @@
       <b-row v-else-if="historial == 'Monitoreo'" class="formaBase">
         <b-col cols="12" md="12">
           <h2 class="text-center title pregunta">
-             ¿Que caracteristicas te interesan monitoriar?
+             ¿Que caracteristicas te interesan mas?
           </h2>
         </b-col>
         <b-col cols="12" md="2"></b-col>
@@ -239,7 +239,7 @@
       <b-row v-else-if="historial == 'Email'" class="formaBase">
         <b-col class="room" cols="12" md="12">
           <h2 class="text-center title pregunta">
-             ¿A qué dirección de correo electrónico podemos enviarte la información?
+             ¿A qué dirección de correo electrónico <br>podemos enviarte la información?
           </h2>
         </b-col>
         <b-col cols="12" md="3"></b-col>
@@ -376,7 +376,7 @@
         <b-col cols="12" md="3"></b-col>
         <b-col class="historial" cols="12" md="12">
           <b-button 
-          :disabled="!servicios_ok" size="lg" @click="irHistorial('Adios')" variant="primary">
+          :disabled="!validarTelefono" size="lg" @click="enviarForm()" variant="primary">
             Continuar
           </b-button>
           <br>
@@ -626,6 +626,7 @@
 </style>
 
 <script>
+    
     export default {
       name: 'FW',
       computed: {
@@ -723,10 +724,31 @@
         irHistorial(val){
           console.log(this.historial)
           this.historial = val;
-        }
-        
+        },
+        enviarForm(){
+         let envioM = {
+          email: this.email,
+          text: this.text,
+          empresa: this.empresa,
+          nombre: this.nombre,
+          apellido: this.apellido,
+          telefono: this.telefono,
+          tipo: this.tipo,
+          servicios: this.servicios,
+          flota: this.flota
+         }
+         console.log(envioM)
+         //Direccion donde esta el archivo PHP 
+         this.$http.post('_ajax_response.php', {
+            juego: envioM
+         }).then(function(response){ 
+            console.log(response.body);
+         }, function(){
+            alert('Error!')
+         });
+        }      
       },
-      data() {
+      data: function() {
         return {
           email: '',
           text: '',

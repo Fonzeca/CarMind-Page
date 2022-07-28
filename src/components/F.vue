@@ -35,7 +35,7 @@
                 <b-col cols="12" lg="3" md="3">
                 </b-col>
 
-                <b-col class="fondo_img1" cols="12" lg="2" md="2">
+                <b-col class="fondo_img1 auto_alto" cols="12" lg="2" md="2">
                     <!-- <img class="img-responsive img_pq" src="@/assets/E/16_L.png"> -->
                     <h4 class="titulo_card">
                         Ahorro de <br>
@@ -52,7 +52,7 @@
                         por los 'dias perdidos 
                     </p>
                 </b-col>
-                <b-col class="fondo_img2" cols="12" lg="2" md="2">
+                <b-col class="fondo_img2 auto_alto" cols="12" lg="2" md="2">
                     <!-- <img class="img-responsive img_pq" src="@/assets/E/17_L.png"> -->
                     <h4 class="titulo_card">
                         Reduccion de <br>
@@ -71,7 +71,7 @@
                         rapidas e inteligentes.
                     </p>
                 </b-col>
-                <b-col class="fondo_img3" cols="12" lg="2" md="2">
+                <b-col class="fondo_img3 auto_alto" cols="12" lg="2" md="2">
                     <!-- <img class="img-responsive img_pq" src="@/assets/E/18_L.png"> -->
                     <h4 class="titulo_card">
                         eficiencia en <br>
@@ -93,18 +93,23 @@
     </b-container>  
 </template>
 <style>
+    .auto_alto{
+        height: auto !important;
+    }
     .desk_s{
-        font-family:"Nunito";
+        /* font-family:"Nunito"; */
+        font-family: "Archivo";
         padding-top: 6em;
     }
     .desk_s h5{
-        font-weight: 700;
-        font-size: 1.45em;
+        font-weight: 800;
+        font-size: 1em;
         letter-spacing: -2px;
         color: darkgray;
     }
     .img_em{
-        width:15vw;
+        width: 13vw;
+        margin: 1em;
     }
     .tt_porque{
         font-family: "Archivo";
@@ -170,7 +175,7 @@
     }
     .contenido_card{
         padding: 5%;
-        font-size: 0.8em;
+        font-size: 0.9em;
         margin-right: 10%
     }
     /* On screens that are 992px or less, set the background color to blue */
