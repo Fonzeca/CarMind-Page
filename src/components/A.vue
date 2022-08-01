@@ -5,8 +5,8 @@
             <h2>
                 Digitaliza tus procesos <br>
                 logisticos para lograr <br>          
-                <span style="color: #B6E802;" >
-                    <img class="img-responsive ok_img" src="@/assets/A/3_S.png" alt="">
+                <span style="color: #B6E802;" class="" >
+                    <img class="img-responsive ok_img" id="ok_img" src="@/assets/A/3_S.png" alt="">
                     <span id="Marquesina_text">
                         eficiencia
                     </span> 
@@ -56,6 +56,66 @@
     .oculto_ar{
         opacity: 0;
     }
+
+    /* .g-container {
+      color: rgb(255, 255, 255);
+      font-size: 4em;
+      filter: contrast(15);
+    } */
+    .word {
+        position: relative;
+        transform: translate(0%, -10%);
+        animation: slideNN 2.5s infinite ease-in-out;
+        margin: auto;
+    }
+    /* .word:nth-child(1) {
+        animation-delay: -7s;
+    }
+    .word:nth-child(2) {
+        animation-delay: -6s;
+    }
+    .word:nth-child(3) {
+        animation-delay: -5s;
+    } */
+    /* Sliding entrances */
+    @keyframes slideNN {
+      0% {
+        left: -25px;
+        opacity: 0;
+        /* filter: blur(0px); */
+      }
+      50%{
+        left: 0px;
+        /* filter: blur(180px); */
+      }
+      70% {
+        opacity: 1;
+        /* filter: blur(0px); */
+        left: 0px;
+      }
+      90% {
+        opacity: 0.5;
+        /* filter: blur(0px); */
+        left: 0px;
+      }
+      100% {
+        opacity: 0;
+        left: 0px;
+      }
+    }
+    @keyframes switch {
+        0%,
+        5%,
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+        50%,
+        80% {
+            filter: blur(180px);
+            opacity: 0;
+        }
+    }
     /* On screens that are 992px or less, set the background color to blue */
     @media screen and (max-width: 992px) {
         .Digitaliza{
@@ -104,32 +164,43 @@
         name: 'A',
         mounted(){
             let MARK = document.getElementById('Marquesina_text');            
+            let IMGMARK = document.getElementById('ok_img');  
+            console.log(IMGMARK)          
             let i = 0;
             let lista = [' ahorro de tiempo', ' reducción de costos', ' eficiencia']
             setInterval(()=>{
                 // MARK.classList.remove("animate__fadeInDown");
-                MARK.classList.add("animate__animated", "animate__SlideOutDown");
+                MARK.classList.add("word");
+                IMGMARK.classList.add("word");
+                
                 
                 setTimeout(()=>{
-                    MARK.innerHTML = "";
+                    //MARK.innerHTML = "";
                     MARK.innerHTML = lista[i];
                     if(i == 1){
                         MARK.classList.add("mark_3");
                     }else{
                         MARK.classList.remove("mark_3");
                     }
-                    
-                    MARK.classList.remove("animate__animated", "animate__SlideOutDown");
+                    // IMGMARK.classList.remove("word");
                     // MARK.classList.add("animate__fadeInDown");
-                    
                     i++;
                     if(i == 3){
                         i = 0;
                     }
-                }, 500)
- 
-                
-            }, 2000)
+                }, 2500)
+
+                MARK.addEventListener('transitionend', 
+                    event => { 
+                        console.log(event); 
+                        if (event.target !== event.currentTarget) { 
+                          
+                            // Ignore it 
+                            return; 
+                        } 
+                        console.log(event.target); 
+                });
+            }, 2500)
         }
     }
 </script>

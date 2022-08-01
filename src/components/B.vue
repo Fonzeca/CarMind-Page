@@ -216,14 +216,14 @@
             new simpleParallax(BAJA, {
                 delay: 0,
                 orientation: 'down',
-                scale: 1.1,
+                scale: 1.5,
                 overflow: true,
-                delay: .6
+                delay: .8
             });
             new simpleParallax(SUBE, {
                 delay: 0,
                 orientation: 'up',
-                scale: 1.5,
+                scale: 0.7,
                 overflow: true,
                 delay: .6,
                 transition: 'cubic-bezier(0,0,0,1)'
