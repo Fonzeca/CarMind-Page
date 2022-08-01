@@ -1,5 +1,5 @@
 <template>
-  <b-container class="bv-example-row seccion2" fluid>
+  <b-container id="EE" class="bv-example-row seccion2" fluid>
       <b-row>
         <b-col cols="12" md="6">
           <b-row>
@@ -7,8 +7,10 @@
                 <img class="d-block d-sm-block d-md-none img-responsive img_cc c99_L" src="@/assets/D/99.png">
             </b-col>
             <b-col cols="12 mg d-none d-sm-none d-md-block auto_alto"  >
-                <img class="img-responsive c9_L animate__animated" src="@/assets/D/9_L.png">
-                <img class="img-responsive c9_R animate__animated animate__fadeInLeft animate__slow" src="@/assets/D/9_R.png">
+                <img class="img-responsive c9_L " src="@/assets/D/9_L.png">
+                <img class="img-responsive c9_R " src="@/assets/D/9_R.png">
+                <!-- <img class="img-responsive c9_L animate__animated" src="@/assets/D/9_L.png">
+                <img class="img-responsive c9_R animate__animated animate__fadeInLeft animate__slow" src="@/assets/D/9_R.png"> -->
                 <!-- <img class="img-responsive img_cc c11_L" src="@/assets/D/11_L.png">
                 <img class="img-responsive img_cc c12_L" src="@/assets/D/12_L.png">
                 <img class="img-responsive img_cc c13_L" src="@/assets/D/13_L.png"> -->
@@ -179,7 +181,27 @@
     }
 </style>
 <script>
+    import simpleParallax from 'simple-parallax-js';
+
     export default {
-        name: 'E'
+        name: 'E',  
+        mounted(){
+            let R = document.querySelectorAll('.c9_R');
+            let L = document.querySelectorAll('.c9_L');
+            new simpleParallax(L, {
+                delay: 0,
+                orientation: 'right',
+                scale: 1.2,
+                overflow: true,
+                delay: .6
+            });
+            new simpleParallax(R, {
+                delay: 0,
+                orientation: 'left',
+                scale: 1.2,
+                overflow: true,
+                delay: .6
+            });
+        }
     }
 </script>

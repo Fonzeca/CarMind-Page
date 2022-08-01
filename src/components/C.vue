@@ -79,6 +79,12 @@
     </b-container>  
 </template>
 <style>
+    .list-group-item{
+        list-style-type: square;
+        list-style-image: url('@/assets/C/7_L.png');
+        list-style-position: inside;
+    }
+
     .someLink .list-group-item{
         font-family: "Nunito";
         margin: 10px;

@@ -1,10 +1,12 @@
 <template>
-    <b-container class="bv-example-row seccion2" fluid>
+    <b-container class="bv-example-row seccion2 " fluid>
     
-        <b-row class="implementa_row" aling-v="center">
+        <b-row class="implementa_row " aling-v="center">
             <b-col class="imagenes_B">
-                <img class="img-responsive B5" src="@/assets/B/5_L.png" alt="">
-                <img class="img-responsive B4 animate__animated animate__fadeInDown" src="@/assets/B/4_L.png" alt="">
+                <img class="img-responsive B5 SUBE" data-depth="0.2" src="@/assets/B/5_L.png" alt="">
+                <!-- <img class="img-responsive B4 animate__animated animate__fadeInDown" src="@/assets/B/4_L.png" alt=""> -->
+                
+                <img class="img-responsive B4 BAJA" data-depth="0.9" src="@/assets/B/4_L.png" alt=""> -->
             </b-col>
             
             <b-col cols="12" md="6">
@@ -96,6 +98,53 @@
         color:blue; margin-bottom: 2em;
     }
 
+    /* //Parallax */
+    /* .wrapperPar {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 2px;
+    }
+    .sectionPar { 
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 0 5px #000;
+    }
+    .parallax::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -1;
+    }
+     */
+
+    .parallax-bg{
+        background-position: center center;
+        transform: translateZ(-0.5px) scale(2);
+        background-size: cover;
+        z-index: -1;
+        height: 50vh;
+    }
+    .parallax-content{
+        z-index: -1;
+        transform: translateY(-25vh) translateZ(0px) scale(1);
+        padding-left:30px;
+        padding-right:30px;
+        text-align:center;
+    }
+
+
+
+
     /* On screens that are 992px or less, set the background color to blue */
     @media screen and (max-width: 992px) {
         .B4{
@@ -152,7 +201,37 @@
 </style>
 
 <script>
+    // import Parallax from "vue-parallaxy";
+    import simpleParallax from 'simple-parallax-js';
+    import Parallax from 'parallax-js'
+
     export default {
-        name: 'B'
+        name: 'B',
+        // components: {
+        //     Parallax
+        // },
+        mounted(){
+            var BAJA = document.querySelectorAll('.BAJA');
+            var SUBE = document.querySelectorAll('.SUBE');
+            new simpleParallax(BAJA, {
+                delay: 0,
+                orientation: 'down',
+                scale: 1.1,
+                overflow: true,
+                delay: .6
+            });
+            new simpleParallax(SUBE, {
+                delay: 0,
+                orientation: 'up',
+                scale: 1.5,
+                overflow: true,
+                delay: .6,
+                transition: 'cubic-bezier(0,0,0,1)'
+            });
+            // let scene = document.querySelectorAll('.implementa_row');
+            // let parallaxInstance = new Parallax(scene, {
+            //   relativeInput: false
+            // });
+        }
     }
 </script>

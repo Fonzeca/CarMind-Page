@@ -1,5 +1,5 @@
 <template>
-    <b-container class="bv-example-row seccion seccion_corto" fluid>
+    <b-container class="bv-example-row seccion seccion_corto Clientes_clase" fluid>
       <b-row class="desk_s">
         <b-col cols="12">
           <h5>EMPRESAS QUE YA ELIGIERON CARDMIND </h5>
@@ -99,7 +99,7 @@
     .desk_s{
         /* font-family:"Nunito"; */
         font-family: "Archivo";
-        padding-top: 6em;
+        padding-top: 4em;
     }
     .desk_s h5{
         font-weight: 800;
@@ -226,7 +226,19 @@
     }
 </style>
 <script>
+import simpleParallax from 'simple-parallax-js';
     export default {
-        name: 'F'
+        name: 'F',
+        mounted(){
+            let f = document.querySelectorAll('.auto_alto');
+            new simpleParallax(f, {
+                delay: 0,
+                orientation: 'up',
+                scale: 1.5,
+                overflow: true,
+                delay: .6,
+                transition: 'cubic-bezier(0,0,0,1)'
+            });
+        }
     }
 </script>

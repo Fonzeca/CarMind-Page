@@ -7,7 +7,9 @@
                 logisticos para lograr <br>          
                 <span style="color: #B6E802;" >
                     <img class="img-responsive ok_img" src="@/assets/A/3_S.png" alt="">
-                    EFICIENCIA 
+                    <span id="Marquesina_text">
+                        eficiencia
+                    </span> 
                 </span> 
                 <br>          
                 En tus servicios <br>          
@@ -27,12 +29,19 @@
         font-weight: 900;   
         padding: 5vw;
     }
-
+    #Marquesina_text{
+        text-transform: uppercase;
+        font-size: 1em;
+        --animate-duration: 1s;
+    }
+    .mark_3 {
+        font-size: 0.9em !important;
+    }
     .Digitaliza h2{
         font-family: "Archivo";
         font-weight: 900 !important;
         line-height: 1.2em;
-        font-size: 3em;
+        font-size: 2.5em;
         position: relative;
         left: 5vw;
     }
@@ -43,6 +52,9 @@
         top: -0.1em;
         position: relative;
         /* right: 0.2em; */
+    }
+    .oculto_ar{
+        opacity: 0;
     }
     /* On screens that are 992px or less, set the background color to blue */
     @media screen and (max-width: 992px) {
@@ -90,5 +102,34 @@
 <script>
     export default {
         name: 'A',
+        mounted(){
+            let MARK = document.getElementById('Marquesina_text');            
+            let i = 0;
+            let lista = [' ahorro de tiempo', ' reducción de costos', ' eficiencia']
+            setInterval(()=>{
+                // MARK.classList.remove("animate__fadeInDown");
+                MARK.classList.add("animate__animated", "animate__SlideOutDown");
+                
+                setTimeout(()=>{
+                    MARK.innerHTML = "";
+                    MARK.innerHTML = lista[i];
+                    if(i == 1){
+                        MARK.classList.add("mark_3");
+                    }else{
+                        MARK.classList.remove("mark_3");
+                    }
+                    
+                    MARK.classList.remove("animate__animated", "animate__SlideOutDown");
+                    // MARK.classList.add("animate__fadeInDown");
+                    
+                    i++;
+                    if(i == 3){
+                        i = 0;
+                    }
+                }, 500)
+ 
+                
+            }, 2000)
+        }
     }
 </script>

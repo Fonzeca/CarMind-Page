@@ -6,7 +6,7 @@
     sticky 
     class="barraNav blanco_fondo">
     <!-- type="light"  -->
-        <b-navbar-brand to="/">
+        <b-navbar-brand to="/"  @click="scroll('.Digitaliza')">
         <img 
           src="@/assets/logoCard.png" 
           alt="Logo">
@@ -17,16 +17,16 @@
         
         <b-navbar-nav class="ml-auto blanco_fondo derechaNav" right>
             <b-navbar-nav  right>
-            <b-nav-item style="margin-top: 10px;" to="/clientes">CLIENTES</b-nav-item>
-            <!-- <b-nav-item style="margin-top: 10px;" to="/precios">PRECIOS</b-nav-item> -->
-            <b-nav-item style="margin-top: 10px;" to="/nosotros">NOSOTROS</b-nav-item>
-            <b-nav-item style="margin-top: 10px;" to="/demo">CONTACTO</b-nav-item>
-            <b-nav-item href="https://carmind-app.com">
-                <b-button variant="success" >INGRESO</b-button>
-            </b-nav-item>
-            <b-nav-item href="/demo">
-                <b-button variant="primary" class="azul_gradiente">DEMO GRATUITA</b-button>
-            </b-nav-item>
+              <b-nav-item style="margin-top: 10px;" href="/" to="/" @click="scroll('.implementa_row')">NOSOTROS</b-nav-item>
+              <b-nav-item style="margin-top: 10px;" href="/" to="/" @click="scroll('.Clientes_clase')">CLIENTES</b-nav-item>
+              <!-- <b-nav-item style="margin-top: 10px;" to="/precios">PRECIOS</b-nav-item> -->
+              <b-nav-item style="margin-top: 10px;" to="/demo">CONTACTO</b-nav-item>
+              <b-nav-item href="https://carmind-app.com">
+                  <b-button variant="success" >INGRESO</b-button>
+              </b-nav-item>
+              <b-nav-item href="/demo">
+                  <b-button variant="primary" class="azul_gradiente">DEMO GRATUITA</b-button>
+              </b-nav-item>
             </b-navbar-nav>
         </b-navbar-nav>
         </b-collapse>
@@ -50,6 +50,24 @@
       },
       onSlideEnd(slide) {
         this.sliding = false
+      },
+      getOffset( el ) {
+        var _x = 0;
+        var _y = 0;
+        while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+              _x += el.offsetLeft - el.scrollLeft;
+              _y += el.offsetTop - el.scrollTop;
+              el = el.offsetParent;
+        }
+        return { top: _y, left: _x };
+      },             
+      scroll(href) {
+        let elementoAncla = document.querySelector(href);
+        console.log(elementoAncla);
+        // elementoAncla.scrollIntoView(false, 
+        // { block:'center', behavior: 'smooth' });
+        // window.scrollBy(0, -50);
+        window.scrollTo( 0, this.getOffset(elementoAncla).top -100 );
       }
     }
   }
