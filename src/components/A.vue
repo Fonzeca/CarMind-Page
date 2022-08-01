@@ -64,8 +64,8 @@
     } */
     .word {
         position: relative;
-        transform: translate(0%, -10%);
-        animation: slideNN 2.5s infinite ease-in-out;
+        transform: translate(0%, -1%);
+        animation: slideNN 3s infinite ease-in-out;
         margin: auto;
     }
     /* .word:nth-child(1) {
@@ -88,13 +88,12 @@
         left: 0px;
         /* filter: blur(180px); */
       }
-      70% {
+      60% {
         opacity: 1;
         /* filter: blur(0px); */
         left: 0px;
       }
       90% {
-        opacity: 0.5;
         /* filter: blur(0px); */
         left: 0px;
       }
@@ -188,7 +187,7 @@
                     if(i == 3){
                         i = 0;
                     }
-                }, 2500)
+                }, 3000)
 
                 MARK.addEventListener('transitionend', 
                     event => { 
@@ -200,7 +199,7 @@
                         } 
                         console.log(event.target); 
                 });
-            }, 2500)
+            }, 3000)
         }
     }
 </script>
