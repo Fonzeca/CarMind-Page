@@ -1,82 +1,72 @@
 <template>
-
-    <b-container class="bv-example-row seccion fondo_imagen" fluid>
-      <b-row>
-        <b-col  style="margin:30px;">
-          <div cols="12">
-            <b-carousel
-              id="carousel-1"
-              v-model="slide"
-              :interval="4000"
-              controls
-              indicators
-              background-image="url('@/assets/')"
-              img-width="1024"
-              img-height="250"
-              style="text-shadow: 1px 1px 2px #333;"
-              @sliding-start="onSlideStart"
-              @sliding-end="onSlideEnd"
-            >
-              <!-- Text slides with image -->
-              <!-- <b-carousel-slide
-                caption="First slide"
-                text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-                img-src="https://picsum.photos/1024/480/?image=52"
-              ></b-carousel-slide> -->
-
-              <!-- Slides with custom text -->
-              <!-- <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-                <h1>Hello world!</h1>
-              </b-carousel-slide> -->
-
-              <!-- Slides with image only -->
-              <!-- <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide> -->
-
-              <!-- Slides with img slot -->
-              <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
-              <b-carousel-slide>
-                <template #img>
-                  <img
-                    class="d-block img-fluid w-100"
-                    width="1024"
-                    height="250"
-                    src=""
-                    alt="image slot"
-                  >
-                </template>
-              </b-carousel-slide>
-
-              <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-              <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-                  a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
-                </p>
-              </b-carousel-slide>
-            </b-carousel>
-          </div>
-        </b-col>
-        
-      </b-row>
-    </b-container>  
+ <vueper-slides
+  class="no-shadow vueper_edit"
+  :visible-slides="3"
+  slide-multiple
+  :gap="3"
+  :slide-ratio="1 / 4"
+  :dragging-distance="200"
+  :breakpoints="{ 800: { visibleSlides: 2, slideMultiple: 2 } }">
+  <vueper-slide class="vueper_slide_edit" v-for="i in 10"  />
+    <template #content>
+        <span>{{ i }}</span>
+    </template>
+  </vueper-slide>
+</vueper-slides>
 </template>
 
+<style>
+  .vueper_edit{
+    background-image: url('../assets/F/fondo.jpeg');
+    background-size: cover;
+    height: 60vw;
+    margin: 5vh 0px 0vh 0px;
+    padding: 20% 5% 0px 5%;
+
+  }
+  .vueper_slide_edit{
+    background-color: red;
+    border-radius: 7%;
+    color: black !important;
+    font-size: 3em;
+  }
+</style>
+
 <script>
-    export default {
-        name: 'Gig',
-        data () {
-            return {
-              slide: 0,
-              sliding: null
-            }
+  import { VueperSlides, VueperSlide } from 'vueperslides'
+  import 'vueperslides/dist/vueperslides.css'
+
+  export default {
+    components: { VueperSlides, VueperSlide },
+    name: 'Gig',
+    data () {
+        return {
+          
+          parallax :  1 , 
+          parallaxFixedContent :  false ,
+          slides: [
+          {
+            title: 'Slide #1',
+            content: 'Slide 1 content.'
+          },
+          {
+            title: 'Slide #2',
+            content: 'Slide 2 content.'
+          },
+          {
+            title: 'Slide #3',
+            content: 'Slide 3 content.'
+          }
+          ]
+        }
+    },
+    methods: {
+        onSlideStart(slide) {
+          this.sliding = true
         },
-        methods: {
-            onSlideStart(slide) {
-              this.sliding = true
-            },
-            onSlideEnd(slide) {
-              this.sliding = false
-            }
+        onSlideEnd(slide) {
+          this.sliding = false
         }
     }
+}
 </script>

@@ -80,15 +80,16 @@
     /* Sliding entrances */
     @keyframes slideNN {
       0% {
-        left: -25px;
+        left: -15px;
         opacity: 0;
         /* filter: blur(0px); */
       }
       50%{
-        left: 0px;
+          left: 0px;
+          opacity: 1;
         /* filter: blur(180px); */
       }
-      60% {
+      80% {
         opacity: 1;
         /* filter: blur(0px); */
         left: 0px;
