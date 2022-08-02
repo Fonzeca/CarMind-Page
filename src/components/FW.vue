@@ -175,7 +175,7 @@
       </b-row>
       
       <!-- Paso 3 Formulario Monitoreo-->
-      <b-row v-else-if="historial == 'Monitoreo'" class="formaBase">
+      <!-- <b-row v-else-if="historial == 'Monitoreo'" class="formaBase">
         <b-col cols="12" md="12">
           <h2 class="text-center title pregunta">
              ¿Que caracteristicas te interesan mas?
@@ -236,7 +236,7 @@
         </b-col>
 
       </b-row>
-            
+             -->
       <!-- Paso 4 Formulario Email-->      
       <b-row v-else-if="historial == 'Email'" class="formaBase">
         <b-col class="room" cols="12" md="12">
