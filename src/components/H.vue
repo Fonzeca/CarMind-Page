@@ -13,7 +13,7 @@
         
         <b-col cols="12" >
           <b-button variant="success" to="/demo" class="f_btn">
-            SOLICITA TU DEMO GRATUITA AQUI
+            <span class="sobrante_">SOLICITA TU </span>DEMO GRATUITA <span class="sobrante_">AQUI</span>
           </b-button>
         </b-col>
       </b-row>
@@ -31,7 +31,7 @@
         position: relative;
         height: 35vh;
         top: -25vh;
-        right: -50vh;
+        right: -60vh;
         margin-bottom: -35vh;
 
     }
@@ -52,7 +52,7 @@
     @media screen and (max-width: 992px) {
         .img_celu{
             height: 25vh;
-            top: -15vh;
+            top: 2vh;
             right: -25vh;
             margin-bottom: -15vh;
         }
@@ -65,13 +65,16 @@
         .pad_{
             padding:5vh  ;
         }
+        .sobrante_{
+            display:none;
+        }
     }
 
     /* On screens that are 600px or less, set the background color to olive */
     @media screen and (max-width: 600px) {
         .img_celu{
             height: 30vh;
-            top: 0vh;
+            top: -0.2vh;
             right: 0vh;
             margin-bottom: -5vh;
         }
@@ -86,6 +89,9 @@
         }
         .pad_{
             padding:5vh  ;
+        }
+        .sobrante_{
+            display:none;
         }
     }
 </style>

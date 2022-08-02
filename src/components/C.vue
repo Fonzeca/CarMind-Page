@@ -10,7 +10,7 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                                Gestion de <br>Conductores
+                                Gestion de Conductores
                             </span>
                         </b-list-group-item>
                         <b-list-group-item href="#" >
@@ -45,7 +45,7 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                                Creacion de <br>checklist
+                                Creacion de checklist
                             </span>
                         </b-list-group-item>
                         <b-list-group-item href="#" >
@@ -86,7 +86,7 @@
                             <img src="@/assets/C/circulo.svg">
                         </span>
                         <span class="tt_lista">
-                            Control <br>Documentario
+                            Control Documentario
                         </span>
                     </b-list-group-item>
                     <b-list-group-item href="#" >
@@ -119,54 +119,54 @@
     </b-container>  
 </template>
 <style>
-@keyframes tada {
-  0% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+    @keyframes tada {
+    0% {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
 
-  40% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -190deg);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
+    40% {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
 
-  50% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
-      rotate3d(0, 1, 0, -170deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
+    50% {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
 
-  80% {
-    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
-      rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
-      rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
+    80% {
+        -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+        transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
 
-  100% {
-    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-}
+    100% {
+        -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    }
     .tt_lista{
         display: inline-flex;
     }
     .circulo_tt{
         margin: 10px;
-        top: 10px;
+        top: -2px;
         position: relative;
         left: -10px;
     }
@@ -174,7 +174,7 @@
         width: 1em;
         /* -webkit-animation-name: tada infinite ease-in-out; */
         /* animation-name: tada infinite ease-in-out; */
-        animation: tada infinite ease-in-out;
+        /* animation: tada infinite ease-in-out; */
     }
     .circulo_{
         position: relative;
@@ -264,6 +264,19 @@
         .pl1{}
         .pl2{}
         .pl3{}
+
+        .circulo_tt{
+            display: inline-block;
+            position: relative;
+            left: -40px;
+            top: 75px;
+        }
+        .circulo_{
+            display: inline-block;
+            position: relative;
+            left: -40px;
+            top: 45px;
+        }
     }
 
     /* On screens that are 600px or less, set the background color to olive */
@@ -281,6 +294,20 @@
             background-size: 89% 75%;
         }
         .pl3{}
+        
+        .circulo_tt{
+            display: inline-block;
+            position: relative;
+            left: -40px;
+            top: 45px;
+        }
+
+        .circulo_{
+         display: inline-block;
+         position: relative;
+         left: -40px;
+         top: 45px;   
+        }
     }
 
 

@@ -11,6 +11,19 @@
         </b-col>
         <b-col cols="12" md="10">
           <b-row class="form_img">
+            
+            <b-col cols="12" md="2" class="my-custom-input-label-box Camionetas">
+              <input 
+              @change="validarTipoMetodo()"  
+              v-model="tipo"  
+              value="Camionetas" 
+              id="Camionetas" 
+              type="checkbox" 
+              name="Camionetas"/>
+              <label for="Camionetas"><span class="text_label"> Camionetas</span></label>
+              <div class="vv_g"></div>
+            </b-col>
+
             <b-col cols="12" md="2" class="my-custom-input-label-box Automoviles">
               <input 
               @change="validarTipoMetodo()"  
@@ -44,33 +57,22 @@
               <label for="Autobuses"><span class="text_label"> Autobuses</span></label>
               <div class="vv_g"></div>
             </b-col>
+            
             <b-col cols="12" md="2" class="my-custom-input-label-box Semi">
               <input 
               @change="validarTipoMetodo()"  
                v-model="tipo"  
-               id="Semi" 
-               value="Semi" 
+               id="Otros" 
+               value="Otros" 
                type="checkbox" 
-               name="Semi"/>
-              <label for="Semi"><span class="text_label"> Semi-remolques</span></label>
-              <div class="vv_g"></div>
-            </b-col>
-            <b-col cols="12" md="2" class="my-custom-input-label-box otro">
-              <input 
-              @change="validarTipoMetodo()"  
-              v-model="tipo"  
-              value="otro" 
-              id="otro" 
-              type="checkbox" 
-              name="otro"/>
-              <label for="otro"><span class="text_label"> Otro</span></label>
+               name="Otros"/>
+              <label for="Otros"><span class="text_label"> Otros</span></label>
               <div class="vv_g"></div>
             </b-col>
           </b-row>
         </b-col>
         <b-col cols="12" md="1">
         </b-col>
-        
         <b-col class="historial" cols="12" md="12">
            <b-button 
           :disabled="!tipo_ok" @click="irHistorial('Flota')" size="lg" variant="primary">
@@ -89,11 +91,11 @@
               ¿Con cuantos vehiculos contas?
           </h2>
         </b-col>
-        <b-col cols="12" md="1">
+        <b-col cols="12" md="4">
         </b-col>
-        <b-col cols="12" md="9">
+        <b-col cols="12" md="4">
           <b-row class="form_img">
-            <b-col cols="12" md="2" class="my-custom-input-label-box linea">
+            <b-col cols="12" md="12" class="my-custom-input-label-box linea">
               <input 
               v-model="flota"
               @change="pasarFlota()"  
@@ -108,7 +110,7 @@
                 </label>
               <div class="vv_g"></div>
             </b-col>
-            <b-col cols="12" md="2" class="my-custom-input-label-box linea">
+            <b-col cols="12" md="12" class="my-custom-input-label-box linea">
               <input 
               v-model="flota"
               @change="pasarFlota()"  
@@ -123,7 +125,7 @@
                 </label>
               <div class="vv_g"></div>
             </b-col>
-            <b-col cols="12" md="2" class="my-custom-input-label-box linea">
+            <b-col cols="12" md="12" class="my-custom-input-label-box linea">
               <input 
                v-model="flota"
               @change="pasarFlota()"  
@@ -138,7 +140,7 @@
                 </label>
               <div class="vv_g"></div>
             </b-col>
-            <b-col cols="12" md="2" class="my-custom-input-label-box linea">
+            <b-col cols="12" md="12" class="my-custom-input-label-box linea">
               <input 
                v-model="flota"
               @change="pasarFlota()"  
@@ -181,9 +183,9 @@
         </b-col>
         <b-col cols="12" md="2"></b-col>
       
-        <b-col cols="12" md="6">
+        <b-col cols="12" md="8">
           <b-row class="form_img">
-            <b-col cols="12" md="2" class="my-custom-input-label-box GPS">
+            <b-col cols="12" md="3" class="my-custom-input-label-box GPS">
               <input 
               v-model="servicios"
               @change="validarServicioMetodo()"  
@@ -194,7 +196,7 @@
               </label>
                 <div class="vv_g"></div>
             </b-col>
-            <b-col cols="12" md="2" class="my-custom-input-label-box Documentos">
+            <b-col cols="12" md="3" class="my-custom-input-label-box Documentos">
               <input 
               v-model="servicios"
               @change="validarServicioMetodo()"  
@@ -205,7 +207,7 @@
               </label>
                 <div class="vv_g"></div>
             </b-col>
-            <b-col cols="12" md="2" class="my-custom-input-label-box Checklist">
+            <b-col cols="12" md="3" class="my-custom-input-label-box Checklist">
               <input 
               v-model="servicios"
               @change="validarServicioMetodo()"  
@@ -461,6 +463,7 @@
     }
     .linea .vv_g{
       top: -35px;
+      left: 17vw;
     }
 
     .celestito_fondo{
@@ -484,8 +487,8 @@
        */
       padding: 1vw;
       margin: 0 auto;
-      margin-right: 1em;
-    
+      margin-right: 1.9em;
+      margin-top: -40px;
     }
     
     .my-custom-input-label-box input[type="checkbox"] {
@@ -524,19 +527,19 @@
     }
     
     .Automoviles input + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/car_default.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/car-1.svg');
     }
     .Automoviles input[type="checkbox"]:checked + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/car_selected.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/car-2.svg');
       height: 140px;
       padding: 5px;
     }
 
     .Camiones input + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/truck_default.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/truck-1.svg');
     }
     .Camiones input[type="checkbox"]:checked + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/truck_selected.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/truck-2.svg');
       /* border: 4px solid blue; */
       /* box-shadow: 4px 4px rgba(0,0,0,0.4); */
       height: 140px;
@@ -544,10 +547,10 @@
     }
 
     .Autobuses input + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/bus_default.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/bus-1.svg');
     }
     .Autobuses input[type="checkbox"]:checked + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/bus_selected.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/bus-2.svg');
       /* border: 4px solid blue; */
       /* box-shadow: 4px 4px rgba(0,0,0,0.4); */
       height: 140px;
@@ -555,10 +558,21 @@
     }
 
     .Semi input + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/trailer_default.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/var-1.svg');
     }
     .Semi input[type="checkbox"]:checked + label {
-      background-image: url('@/assets/Formulario/F_SPA/TIPO/trailer_selected.png');
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/var-2.svg');
+      /* border: 4px solid blue; */
+      /* box-shadow: 4px 4px rgba(0,0,0,0.4); */
+      height: 140px;
+      padding: 5px;
+    }
+
+    .Camionetas input + label {
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/pickup-1.svg');
+    }
+    .Camionetas input[type="checkbox"]:checked + label {
+      background-image: url('@/assets/Formulario/F_SPA/TIPO/pickup-2.svg');
       /* border: 4px solid blue; */
       /* box-shadow: 4px 4px rgba(0,0,0,0.4); */
       height: 140px;

@@ -21,7 +21,7 @@
                     El sistema intuitivo y facil de usar.
                 </h3>
                 <b-button variant="success btn-h" to="/demo">
-                    <span> Solicita tu demo gratuita aqui</span>
+                    <span> <span class="sobrante_cel">Solicita tu </span> demo gratuita aqui</span>
                 </b-button>
             </b-col>
           </b-row>
@@ -161,6 +161,9 @@
         .control_a{
             margin-left: 3vw;;
         }
+        .sobrante_cel{
+            display: none;
+        }
     }
 
     /* On screens that are 600px or less, set the background color to olive */
@@ -177,6 +180,9 @@
         }
         .c99_L {
             width: 90vw;
+        }
+        .sobrante_cel{
+            display: none;
         }
     }
 </style>

@@ -2,6 +2,7 @@
   <div class="home">
     <Barra />
     <Anima />
+
   </div>
 </template>
 

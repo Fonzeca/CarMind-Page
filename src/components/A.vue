@@ -65,7 +65,7 @@
     .word {
         position: relative;
         transform: translate(0%, -1%);
-        animation: slideNN 3s infinite ease-in-out;
+        animation: slideNN 5s infinite ease-in-out;
         margin: auto;
     }
     /* .word:nth-child(1) {
@@ -84,7 +84,7 @@
         opacity: 0;
         /* filter: blur(0px); */
       }
-      50%{
+      20%{
           left: 0px;
           opacity: 1;
         /* filter: blur(180px); */
@@ -141,7 +141,7 @@
     /* On screens that are 600px or less, set the background color to olive */
     @media screen and (max-width: 600px) {
         .Digitaliza{
-            text-align: center;
+            text-align: left;
             color: white;
             font-weight: 900;   
             padding: 5vw;
@@ -188,7 +188,7 @@
                     if(i == 3){
                         i = 0;
                     }
-                }, 3000)
+                }, 5000)
 
                 MARK.addEventListener('transitionend', 
                     event => { 
@@ -200,7 +200,7 @@
                         } 
                         console.log(event.target); 
                 });
-            }, 3000)
+            }, 5000)
         }
     }
 </script>
