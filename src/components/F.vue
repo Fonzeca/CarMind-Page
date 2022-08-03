@@ -22,10 +22,10 @@
             </b-table-simple>
         </b-col>
         <b-col cols="12" class="text-center" style="padding-top: 3em;">
-            <h2 class="tt_porque">¿Por que deberias <br> elegir CardMind?</h2>
+            <h2 class="tt_porque">¿Por qué deberías<br> elegir CardMind?</h2>
             <h6 class="obtienes_">
                 <span class="linea_azul">------------</span>
-                 obtienes estas ventajas competitivas
+                 Obtienes estas ventajas competitivas
                 <span class="linea_azul">------------</span>
             </h6>
         
@@ -42,45 +42,45 @@
                         tiempo y dinero 
                     </h4>
                     <p class="contenido_card">
-                        Ganas tiempo para concentrate
+                        Ganas tiempo para concentrarte 
                         en el trabajo que si importa en
                         lugar de tener que gestionar
                         manualmente los procesos.
                         <br>
                         Obtienes mayores ganancias 
-                        reduciendo al minimo los costos
-                        por los 'dias perdidos 
+                        reduciendo al mínimo los costos
+                        por los días perdidos 
                     </p>
                 </b-col>
                 <b-col class="sobrante__ md_s" cols="1" md="0"></b-col>
                     <b-col class="fondo_img2 auto_alto" cols="10" lg="2" md="3">
                     <h4 class="titulo_card">
-                        Reduccion de <br>
+                        Reducción de <br>
                         costos e  <br>
                         imprevistos
                     </h4>
                     <p class="contenido_card">
-                        Reducir costos por envios
-                        atrasados o dias perdidos debido
+                        Reducir costos por envíos
+                        atrasados o días perdidos debido
                         a problemas de papeleo o
-                        mecanicos de alguno de tus 
-                        vehiculos.
+                        mecánicos de alguno de tus 
+                        vehículos.
                         <br>
-                        En un click accedes a informacion
-                        de toda tu flota, y tomaras decisiones 
-                        rapidas e inteligentes.
+                        En un click accedes a información
+                        de toda tu flota, y tomarás decisiones 
+                        rápidas e inteligentes.
                     </p>
                 </b-col>
                 <b-col class="sobrante__ md_s" cols="1" md="0"></b-col>
                 <b-col class="fondo_img3 auto_alto" cols="10" lg="2" md="3">
                     <!-- <img class="img-responsive img_pq" src="@/assets/E/18_L.png"> -->
                     <h4 class="titulo_card">
-                        eficiencia en <br>
+                        Eficiencia en <br>
                         los servicios 
                     </h4>
                     <p class="contenido_card">
                         Aumentas la eficiencia de tus servicios
-                        al planificar y ejecutar envios con datos precisos
+                        al planificar y ejecutar envíos con datos precisos
                         y ganas la confiabilidad de tus clientes
                         mediante gestiones efectivas.
                     </p>

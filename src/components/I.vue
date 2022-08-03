@@ -14,17 +14,23 @@
         </b-col>
         <b-col cols="12" md="5">
           <b-list-group class="dark someLink2">
-            <b-list-group-item class="dark">
+            <b-list-group-item class="dark" href="">
+                <a class="link_redes_" href="https://www.linkedin.com/company/81582827/">
                 <img src="@/assets/H/21_L.png">
-                /user
+                Linkedin
+                </a>
             </b-list-group-item>
-            <b-list-group-item class="dark">
-                <img src="@/assets/H/22_L.png">
-                @user
-            </b-list-group-item>
-            <b-list-group-item class="dark">
-                <img src="@/assets/H/23_L.png">
-                @user
+            <b-list-group-item class="dark" >
+              <a class="link_redes_" href="https://wa.me/+5492966783544">
+              <img src="@/assets/H/25_L.png" 
+              style="height: 35px;
+                width: 35px;
+                left: -1px;
+                position: relative;">
+                <span style="position:relative; left:-4px;">
+                  Whatsapp
+                </span>
+              </a>
             </b-list-group-item>
           </b-list-group>
         </b-col>
@@ -37,6 +43,10 @@
 </template>
 
 <style>
+    .link_redes_{
+      text-decoration: none;
+      color: white;
+    }
     .someLink2 .list-group-item{
       font-family: "Nunito";
       margin: 10px;

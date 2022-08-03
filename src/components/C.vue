@@ -10,7 +10,7 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                                Gestion de Conductores
+                                 Gestión de  <br>Conductores
                             </span>
                         </b-list-group-item>
                         <b-list-group-item href="#" >
@@ -18,9 +18,9 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                                Podras visualizar quien <br>
-                                esta utilizando tus <br>
-                                vehiculos en tiempo real. 
+                                Podrás visualizar quien <br>
+                                está utilizando tus <br>
+                                vehículos en tiempo real. 
                             </span>
                         </b-list-group-item>
                         <b-list-group-item href="#">
@@ -45,7 +45,7 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                                Creacion de checklist
+                                Creación de checklist
                             </span>
                         </b-list-group-item>
                         <b-list-group-item href="#" >
@@ -53,10 +53,10 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                            Creacion de formularios <br>
+                            Creación de formularios <br>
                             que permiten tener <br>
                             actualizados los datos de <br>
-                            los vehiculos, control de <br>
+                            los vehículos, control de <br>
                             revisiones y trackeo de <br>
                             kilometraje para mantener <br>
                             saludable tu flota. 
@@ -67,7 +67,7 @@
                                 <img src="@/assets/C/circulo.svg">
                             </span>
                             <span class="tt_lista">
-                                Te ayudara a evitar <br>
+                                Te ayudará a evitar <br>
                                 desperfectos mecanicos <br>
                                 que demoren tus servicios.
                             </span>
@@ -94,8 +94,8 @@
                             <img src="@/assets/C/circulo.svg">
                         </span>
                         <span class="tt_lista">
-                            Subi la documentacion de <br>
-                            tus vehiculos y nosotros nos <br>
+                            Subí la documentacion de <br>
+                            tus vehículos y nosotros nos <br>
                             encargamos de recordarte <br>
                             los vencimientos.
                         </span>

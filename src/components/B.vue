@@ -12,18 +12,18 @@
             <b-col cols="12" md="6">
                 <h2 class="implementa">
                 Implementa el mejor <br>
-                sistema de gestion <br>
+                sistema de gestión  <br>
                 de transporte que <br>
-                se adapte a tus necesidades. <br>
+                se adapté a tus necesidades. <br>
                 </h2>
                 <h4 class="ecosistema">
                 Cambiar a un ecosistema digital es <br>
-                mas facil que nunca <br>
+                más fácil que nunca <br>
                 </h4>
                 <h6 class="pnl">
                 Ponle fin a procesos desafiantes para tu empresa, <br>
                 gestiona y preve los riesgos, reduce los costos innecesarios <br>
-                de la logistica y obten una mayor visibilidad convirtiendo los  <br>
+                de la logística y obtén una mayor visibilidad convirtiendo los  <br>
                 datos en informacion relevante e impactando positivamente <br>
                 en tu negocio <br>
                 </h6>

@@ -3,8 +3,8 @@
         <b-row class="Digitaliza" align-v="center">
         <b-col cols="12" md="6">
             <h2>
-                Digitaliza tus procesos <br>
-                logisticos para lograr <br>          
+                Digitalizá tus procesos <br>
+                logísticos para lograr  <br>          
                 <span style="color: #B6E802;" class="" >
                     <img class="img-responsive ok_img" id="ok_img" src="@/assets/A/3_S.png" alt="">
                     <span id="Marquesina_text">

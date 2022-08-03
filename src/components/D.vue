@@ -3,13 +3,13 @@
       <b-row>
         <b-col cols="12" class="pad_vis">
           <h4 class="vis_">
-            La <strong>visibilidad en tiempo real </strong> es necesaria para tomar descisiones rapidas <br>
+            La <strong>visibilidad en tiempo real </strong> es necesaria para tomar tomar decisiones rápidas <br>
             e inteligentes que te permitan superar las expectativas de tus clientes.
           </h4>
           <br>
           <div>
             <b-button  variant="success" to="/demo" class="btn_haciendo">
-              <span> Haciendo click aqui obtienes una </span> demo gratuita
+              <span> Haciendo clic aquí obtienes una </span> demo gratuita
             </b-button>
           </div>
         </b-col>

@@ -17,11 +17,11 @@
             </b-col>
             <b-col cols="12">
                 <h3 class="text-center obten">
-                    Obten el total control de tu flota con CarMind: <br>
-                    El sistema intuitivo y facil de usar.
+                    Obtén el total control de tu flota con CarMind: <br>
+                    el sistema intuitivo y fácil de usar. 
                 </h3>
                 <b-button variant="success btn-h" to="/demo">
-                    <span> <span class="sobrante_cel">Solicita tu </span> demo gratuita aqui</span>
+                    <span> <span class="sobrante_cel">Solicitá tu </span> demo gratuita aquí</span>
                 </b-button>
             </b-col>
           </b-row>
@@ -46,7 +46,7 @@
             <br>
             <b-list-group-item>
                <img src="@/assets/A/3_S.png" class="img-responsive img_ok"> 
-               Obtener la informacion necesaria sobre el estado de cada vehiculo.
+               Obtener la información necesaria sobre el estado de cada vehiculo.
             </b-list-group-item>
             <br>
             <b-list-group-item>
@@ -56,7 +56,7 @@
             <br>
             <b-list-group-item>
                 <img src="@/assets/A/3_S.png" class="img-responsive img_ok">
-                Optimizar los flujos de trabajo y la comunicacion entre las partes involucradas.
+                Optimizar los flujos de trabajo y la comunicación entre las partes involucradas.
             </b-list-group-item>
             <br>
             <b-list-group-item>

@@ -5,7 +5,7 @@
         
         <b-col cols="12" >
           <h4 class="text-center text_celu">
-            Quiero gestionar mi flota de vehiculos.
+            Quiero gestionar mi flota de vehículos.
           </h4>
           <img class="img-responsive img_celu" src="@/assets/G/20_l.png">
           <!-- <img class="img-responsive img_celu animate__animated animate__tada animate__infinite" src="@/assets/G/20_l.png"> -->
@@ -13,7 +13,7 @@
         
         <b-col cols="12" >
           <b-button variant="success" to="/demo" class="f_btn">
-            <span class="sobrante_">SOLICITA TU </span>DEMO GRATUITA <span class="sobrante_">AQUI</span>
+            <span class="sobrante_">SOLICITÁ TU </span>DEMO GRATUITA <span class="sobrante_">AQUI</span>
           </b-button>
         </b-col>
       </b-row>
