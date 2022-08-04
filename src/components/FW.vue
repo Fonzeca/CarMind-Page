@@ -753,8 +753,8 @@
          }
          console.log(envioM)
          //Direccion donde esta el archivo PHP 
-         this.$http.post('_ajax_response.php', {
-            juego: envioM
+         this.$http.post('Mailer/sendEmail.php', {
+            datos: envioM
          }).then(function(response){ 
             console.log(response.body);
          }, function(){
