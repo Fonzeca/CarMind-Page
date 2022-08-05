@@ -51,7 +51,7 @@
 
     <F></F>
 
-    <Gig></Gig>
+    <!-- <Gig></Gig> -->
     <H></H>
 
     <I></I>
@@ -66,14 +66,14 @@ import C from '@/components/C.vue'
 import D from '@/components/D.vue'
 import E from '@/components/E.vue'
 import F from '@/components/F.vue'
-import Gig from '@/components/Gig.vue'
+// import Gig from '@/components/Gig.vue'
 import H from '@/components/H.vue'
 import I from '@/components/I.vue'
 
 export default {
   name: 'app',
   components: {
-      A, B, C, D, E, F, Gig, H, I
+      A, B, C, D, E, F, H, I
     }
 }
 
