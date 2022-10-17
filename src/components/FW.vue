@@ -756,7 +756,8 @@
          this.$http.post('Mailer/sendEmail.php', {
             datos: envioM
          }).then(function(response){ 
-            console.log(response.body);
+            alert('Mensaje enviado con exito!')
+            window.location.replace("carmind.online");
          }, function(){
             alert('Error!')
          });
