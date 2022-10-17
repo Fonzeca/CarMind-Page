@@ -757,7 +757,7 @@
             datos: envioM
          }).then(function(response){ 
             alert('Mensaje enviado con exito!')
-            window.location.replace("carmind.online");
+            window.location.replace("/");
          }, function(){
             alert('Error!')
          });
