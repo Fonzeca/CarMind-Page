@@ -7,6 +7,14 @@
 
 export default {
   name: 'App',
+  mounted(){
+    let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('src', 'https://cdn.popupsmart.com/bundle.js')
+      recaptchaScript.setAttribute('data-id', '2320')
+      recaptchaScript.setAttribute("async", "")
+      recaptchaScript.setAttribute("defer", "")
+      document.body.appendChild(recaptchaScript)
+  },
   metaInfo: {
     title: 'CarMind',
     htmlAttrs: {
@@ -25,6 +33,7 @@ export default {
   }
 }
 </script>
+
 
 <style>
 
