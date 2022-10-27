@@ -12,7 +12,7 @@
         </b-col>
         
         <b-col cols="12" >
-          <b-button variant="success" to="/demo" class="f_btn">
+          <b-button variant="success" v-on:click="toDemo" href="#" class="f_btn">
             <span class="sobrante_">SOLICITÁ TU </span>DEMO GRATUITA <span class="sobrante_">AQUI</span>
           </b-button>
         </b-col>
@@ -120,6 +120,12 @@
                 delay: .6,
                 transition: 'cubic-bezier(0,0,0,1)'
             });
+        },
+        methods:{
+            toDemo() {
+                this.$gtag.event('click-demo', { method: 'Google' })
+                window.location.href = '/demo';
+            },
         }
     }
 </script>

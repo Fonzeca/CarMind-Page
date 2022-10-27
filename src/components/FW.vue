@@ -752,12 +752,11 @@
           flota: this.flota
          }
          console.log(envioM)
-         //Direccion donde esta el archivo PHP 
+        //  Direccion donde esta el archivo PHP 
          this.$http.post('Mailer/sendEmail.php', {
             datos: envioM
-         }).then(function(response){ 
-            alert('Mensaje enviado con exito!')
-            window.location.replace("/");
+         }).then(function(response){
+          this.historial = 'Adios';
          }, function(){
             alert('Error!')
          });

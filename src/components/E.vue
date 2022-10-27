@@ -20,7 +20,7 @@
                     Obtén el total control de tu flota con CarMind: <br>
                     el sistema intuitivo y fácil de usar. 
                 </h3>
-                <b-button variant="success btn-h" to="/demo">
+                <b-button variant="success btn-h" @click="toDemo">
                     <span> <span class="sobrante_cel">Solicitá tu </span> demo gratuita aquí</span>
                 </b-button>
             </b-col>
@@ -208,6 +208,12 @@
                 overflow: true,
                 delay: .6
             });
+        },
+        methods:{
+            toDemo() {
+                this.$gtag.event('click-demo', { method: 'Google' })
+                window.location.href = '/demo';
+            },
         }
     }
 </script>

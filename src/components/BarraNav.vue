@@ -20,11 +20,11 @@
               <b-nav-item style="margin-top: 10px;" href="/" to="/" @click="scroll('.implementa_row')">NOSOTROS</b-nav-item>
               <b-nav-item style="margin-top: 10px;" href="/" to="/" @click="scroll('.Clientes_clase')">CLIENTES</b-nav-item>
               <!-- <b-nav-item style="margin-top: 10px;" to="/precios">PRECIOS</b-nav-item> -->
-              <b-nav-item style="margin-top: 10px;" to="/demo">CONTACTO</b-nav-item>
-              <b-nav-item href="https://carmind-app.com">
+              <b-nav-item style="margin-top: 10px;" @click="toDemo" href="#">CONTACTO</b-nav-item>
+              <b-nav-item href="https://carmind-app.com" @click="toApp">
                   <b-button variant="success" >INGRESO</b-button>
               </b-nav-item>
-              <b-nav-item href="/demo">
+              <b-nav-item @click="toDemo" href="#">
                   <b-button variant="primary" class="azul_gradiente">DEMO GRATUITA</b-button>
               </b-nav-item>
             </b-navbar-nav>
@@ -62,13 +62,25 @@
         return { top: _y, left: _x };
       },             
       scroll(href) {
+        if(href === '.implementa_row'){
+          this.$gtag.event('click-nosotros', { method: 'Google' })
+        }else if(href === '.Clientes_clase'){
+          this.$gtag.event('click-clientes', { method: 'Google' })
+        }
         let elementoAncla = document.querySelector(href);
         console.log(elementoAncla);
         // elementoAncla.scrollIntoView(false, 
         // { block:'center', behavior: 'smooth' });
         // window.scrollBy(0, -50);
         window.scrollTo( 0, this.getOffset(elementoAncla).top -100 );
-      }
+      },
+      toApp(){
+          this.$gtag.event('click-app', { method: 'Google' })
+      },
+      toDemo() {
+          this.$gtag.event('click-contacto', { method: 'Google' })
+          window.location.href = '/demo';
+      },
     }
   }
 </script>

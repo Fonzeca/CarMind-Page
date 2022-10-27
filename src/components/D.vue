@@ -8,7 +8,7 @@
           </h4>
           <br>
           <div>
-            <b-button  variant="success" to="/demo" class="btn_haciendo">
+            <b-button  variant="success" v-on:click="toDemo" href="#" class="btn_haciendo">
               <span> Haciendo clic aquí obtienes una </span> demo gratuita
             </b-button>
           </div>
@@ -50,6 +50,12 @@
 </style>
 <script>
     export default {
-        name: 'D'
+        name: 'D',
+        methods:{
+          toDemo() {
+                this.$gtag.event('click-demo', { method: 'Google' })
+                window.location.href = '/demo';
+            },
+        }
     }
 </script>

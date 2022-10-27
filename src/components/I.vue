@@ -15,13 +15,13 @@
         <b-col cols="12" md="5">
           <b-list-group class="dark someLink2">
             <b-list-group-item class="dark" href="">
-                <a class="link_redes_" href="https://www.linkedin.com/company/81582827/">
+                <a class="link_redes_" href="https://www.linkedin.com/company/81582827/" v-on:click="toLinkedin">
                 <img src="@/assets/H/21_L.png">
                 Linkedin
                 </a>
             </b-list-group-item>
             <b-list-group-item class="dark" >
-              <a class="link_redes_" href="https://wa.me/+5492966783544">
+              <a class="link_redes_" href="https://wa.me/+5492966783544" v-on:click="toWhatsapp">
               <img src="@/assets/H/25_L.png" 
               style="height: 35px;
                 width: 35px;
@@ -73,6 +73,14 @@
 
 <script>
     export default {
-        name: 'I'
+        name: 'I',
+        methods:{
+          toLinkedin() {
+              this.$gtag.event('click-linkedin', { method: 'Google' })
+          },
+          toWhatsapp(){
+            this.$gtag.event('click-whatsapp', { method: 'Google' })
+          }
+        }
     }
 </script>
